@@ -1,13 +1,13 @@
 import React from 'react'
 import Nav from './Nav'
 import Hero from './Hero'
-import Phone from './Phone'
+import Noti from './Noti'
 function Home () {
   return (
     <>
       <Nav />
       <Hero />
-      <Phone />
+      <Noti />
     </>
   )
 }
