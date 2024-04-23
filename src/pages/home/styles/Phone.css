@@ -1,0 +1,134 @@
+#phone {
+  height: 40rem;
+  padding: 1rem 0rem;
+  @media (max-width: 750px) {
+    padding: 3rem 0rem;
+    height: auto;
+  }
+}
+.phone__container {
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 1500px) {
+    justify-content: space-around;
+    align-items: center;
+  }
+  @media (max-width: 750px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.phone__box {
+  max-width: 832px;
+  width: 100%;
+  height: 100%;
+  min-height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-left: 6rem;
+  @media (max-width: 1700px) {
+    margin-left: 0rem;
+  }
+
+  @media (max-width: 1500px) {
+    max-width: 37rem;
+  }
+  @media (max-width: 750px) {
+    min-height: auto;
+  }
+}
+.phone__left {
+  max-width: 37rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  z-index: 1;
+  padding: 0rem 1rem;
+  @media (max-width: 750px) {
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+.phone__head {
+  font-weight: 700;
+  font-size: 3rem;
+  @media (max-width: 500px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 350px) {
+    font-size: 1.5rem;
+  }
+}
+.phone__outline {
+  background-color: #acd2e9;
+  padding: 0rem 0.5rem;
+  border-radius: 0.5rem;
+}
+.phone__body {
+ 
+  font-weight: 400;
+font-size: 1.1rem;
+  @media (max-width: 500px) {
+    font-size: 1rem;
+  }
+  @media (max-width: 350px) {
+    font-size: 0.9rem;
+  }
+}
+.phone__redirect {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  color: #f67c52;
+  transition: all 0.2s ease-in-out;
+  max-width: 14rem;
+  align-items: center;
+}
+.phone__redirect:hover {
+  color: #db4e1f;
+}
+.phone__redirect p {
+  font-size: 1.7rem;
+  font-weight: 600;
+  @media (max-width: 520px) {
+    font-size: 1.2rem;
+  }
+}
+.phone__icon {
+  padding: 0.5rem;
+  background-color: #f0b7a5;
+  border-radius: 0.5rem;
+  @media (max-width: 520px) {
+    padding: 0.3rem;
+  }
+}
+.phone__filler {
+  min-height: 35rem;
+  max-width: 20.375rem;
+  width: 100%;
+  @media (max-width: 1500px) {
+    display: none;
+  }
+}
+.phone__image {
+  max-height: 35rem;
+  position: absolute;
+  right: 0;
+  bottom: -600px;
+  @media (max-width: 1500px) {
+    display: none;
+  }
+}
+.phone__image2 {
+  max-height: 35rem;
+  display: none;
+  padding: 0rem 1rem;
+  @media (max-width: 1500px) {
+    display: block;
+  }
+  @media (max-width: 400px) {
+    padding: 0rem 0.5rem;
+  }
+}

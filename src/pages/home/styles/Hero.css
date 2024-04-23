@@ -5,6 +5,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url('./hero.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  @media (max-width: 500px) {
+    height: 92vh;
+    background-image: url('./hero2.jpg');
+  }
 }
 .hero__flex {
   display: flex;
@@ -12,11 +19,11 @@
   justify-content: center;
   align-items: center;
   padding: 0rem 1rem;
+  margin-bottom: 5rem;
 }
 .hero__flex h2 {
   color: #1d2d32;
   font-size: 4.5rem;
-  margin-bottom: 1rem;
   @media (max-width: 800px) {
     font-size: 3.5rem;
   }
@@ -41,15 +48,15 @@
     font-size: 0.9rem;
   }
   @media (max-width: 550px) {
-    font-size:  0.8rem;
+    font-size: 0.9rem;
   }
 }
 .hero__button {
   background-color: #f67c52;
   color: white;
-  padding: 0.97rem 31px 0.97rem 31px;
+  padding: 0.57rem 2rem 0.57rem 2rem;
   border-radius: 19.17px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 500;
   transition: all 0.2s ease-in-out;
 }
