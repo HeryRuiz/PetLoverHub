@@ -24,7 +24,7 @@ function Hero() {
             <h2>Pet Trainer Hub</h2>
             {isSmallScreen ? (
               <p>
-                Elevate your pet training game with our all-in-one platform.
+                Elevate your pet training game.
                 Organize, schedule, and book.
                 <br />
                 All in one platform.

@@ -20,7 +20,7 @@ document.querySelector('.burger__container').style.display = 'block'
           </div>
           <img src={logo} alt="Logo" className="nav__logo" />
           <div className="nav__smaller">
-            <Link to="/" className="nav__started">
+            <Link to="/login" className="nav__started">
               <div className="nav__back">
                 <LayoutGrid />
               </div>
