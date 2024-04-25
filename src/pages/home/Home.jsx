@@ -1,16 +1,16 @@
 import React from "react";
-import Nav from "./Nav";
+import Nav from "../Layout/Nav";
 import Hero from "./Hero";
 import Noti from "./Noti";
 import Banner from "./Banner";
-import Footer from "./Footer";
+import Footer from "../Layout/Footer";
 import Phone from "./Phone";
 import Window from "./Window";
 
-function Home() {
+function Home({onBurger, offBurger}) {
   return (
     <>
-      <Nav />
+      <Nav onBurger={onBurger} offBurger={offBurger}/>
       <Hero />
       <main>
         <Phone />

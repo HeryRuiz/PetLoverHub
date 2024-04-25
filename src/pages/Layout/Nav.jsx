@@ -4,13 +4,10 @@ import logo from "../images/logo.png";
 import { LayoutGrid, Menu } from "lucide-react";
 import { Link } from "react-router-dom";
 import Burger from "./Burger";
-function Nav() {
-  const toggleBurger = () => {
-document.querySelector('.burger__container').style.display = 'block'
- }  
- return (
+function Nav({ offBurger, onBurger }) {
+  return (
     <>
-      <Burger />
+      <Burger onBurger={onBurger} offBurger={offBurger}/>
       <nav>
         <div className="nav__container">
           <div className="nav__flex">
@@ -27,7 +24,11 @@ document.querySelector('.burger__container').style.display = 'block'
 
               <p>Get Started</p>
             </Link>
-            <Menu className="burger" size="30px" onClick={toggleBurger}/>
+            <Menu
+              className="burger"
+              size="30px"
+              onClick={()=>onBurger("burger__container")}
+            />
           </div>
         </div>
       </nav>

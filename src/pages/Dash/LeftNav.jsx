@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./styles/Left.css";
-import logo from "../images/logo.png";
+import logo2 from "../images/logo.png";
 import {
   BookUser,
   CalendarDays,
   CircleHelp,
+  Clock9,
   Gem,
-  ReceiptText,
   Settings,
   SquarePlus,
 } from "lucide-react";
@@ -18,12 +18,12 @@ function Left({ content, setContent }) {
         <div>
           <div className="left__top">
             <Link to="/">
-              <img src={logo} alt="Logo" className="left__logo" />
+              <img src={logo2} alt="Logo" className="left__logo" />
             </Link>
             <div className="left__flex">
               <div
                 className={
-                  content === "Booking" ? "left__outline" : "left__item"
+                  content === "Booking" ? "left__selected" : "left__item"
                 }
                 onClick={() => {
                   setContent("Booking");
@@ -36,7 +36,7 @@ function Left({ content, setContent }) {
               </div>
               <div
                 className={
-                  content === "Schedule" ? "left__outline" : "left__item"
+                  content === "Schedule" ? "left__selected" : "left__item"
                 }
                 onClick={() => {
                   setContent("Schedule");
@@ -49,7 +49,7 @@ function Left({ content, setContent }) {
               </div>
               <div
                 className={
-                  content === "Profile" ? "left__outline" : "left__item"
+                  content === "Profile" ? "left__selected" : "left__item"
                 }
                 onClick={() => {
                   setContent("Profile");
@@ -66,15 +66,15 @@ function Left({ content, setContent }) {
             <div className="left__flex">
               <div
                 className={
-                  content === "Transactions" ? "left__outline" : "left__item"
+                  content === "Transactions" ? "left__selected" : "left__item"
                 }
                 onClick={() => {
                   setContent("Transactions");
                 }}
               >
                 <div className="left__text">
-                  <ReceiptText />
-                  <p>Transactions</p>
+                <Clock9 />
+                  <p>Availability</p>
                 </div>
               </div>
             </div>
@@ -86,7 +86,7 @@ function Left({ content, setContent }) {
             <div className="left__sub">
               <div className="left__text">
                 <Gem />
-                <p>Upgrade Plan</p>
+                <p>Upgrade plan</p>
               </div>
             </div>
             <div className="left__item">
