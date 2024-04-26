@@ -20,21 +20,21 @@ const ScrollToTop = () => {
   }, [pathname]);
   return null;
 };
-const offBurger = (con) => {
-  const element = document.querySelector(`.${con}`);
-  if (element) {
-    element.style.display = "none";
-  }
-};
-
-const onBurger = (con) => {
-  const element = document.querySelector(`.${con}`);
-  if (element) {
-    element.style.display = "block";
-  }
-};
 
 function App() {
+  const offBurger = (con) => {
+    const element = document.querySelector(`.${con}`);
+    if (element) {
+      element.style.display = "none";
+    }
+  };
+  
+  const onBurger = (con) => {
+    const element = document.querySelector(`.${con}`);
+    if (element) {
+      element.style.display = "block";
+    }
+  };
   return (
     <>
       <>
