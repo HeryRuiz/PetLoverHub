@@ -1,4 +1,4 @@
-import React, { useEffect} from "react";
+import React, { useEffect } from "react";
 
 import {
   BrowserRouter as Router,
@@ -28,7 +28,7 @@ function App() {
       element.style.display = "none";
     }
   };
-  
+
   const onBurger = (con) => {
     const element = document.querySelector(`.${con}`);
     if (element) {
@@ -36,26 +36,22 @@ function App() {
     }
   };
   return (
-    <>
-      <>
-        <Router>
-          <ScrollToTop />
-          <Routes>
-            <Route
-              element={<Layout onBurger={onBurger} offBurger={offBurger} />}
-            >
-              <Route path="/" element={<Home />} />
-            </Route>
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
-            <Route
-              path="/dashboard"
-              element={<Dashboard onBurger={onBurger} offBurger={offBurger} />}
-            />
-          </Routes>
-        </Router>
-      </>
-    </>
+    <Router>
+      <ScrollToTop />
+      <Routes>
+        <Route element={<Layout onBurger={onBurger} offBurger={offBurger} />}>
+          {"Public Routes"}
+
+          <Route path="/" element={<Home />} />
+        </Route>
+        <Route path="*" element={<Login />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+
+        {"Private Routes"}
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </Router>
   );
 }
 

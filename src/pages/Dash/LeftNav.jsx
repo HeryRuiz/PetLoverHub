@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./styles/Left.css";
 import logo2 from "../images/logo.png";
 import {
@@ -73,7 +73,7 @@ function Left({ content, setContent }) {
                 }}
               >
                 <div className="left__text">
-                <Clock9 />
+                  <Clock9 />
                   <p>Availability</p>
                 </div>
               </div>
