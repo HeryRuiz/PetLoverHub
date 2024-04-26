@@ -13,7 +13,7 @@ function Nav({ offBurger, onBurger }) {
           <div className="nav__flex">
             <p>Home</p>
             <p>Services</p>
-            <p>About us</p>
+            <p>Pricing</p>
           </div>
           <Link to='/'>
             <img src={logo} alt="Logo" className="nav__logo" />
