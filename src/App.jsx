@@ -21,19 +21,19 @@ const ScrollToTop = () => {
 };
 
 function App() {
-  const offBurger = (con) => {
+  function offBurger(con) {
     const element = document.querySelector(`.${con}`);
     if (element) {
       element.style.display = "none";
     }
-  };
+  }
 
-  const onBurger = (con) => {
+  function onBurger(con) {
     const element = document.querySelector(`.${con}`);
     if (element) {
       element.style.display = "block";
     }
-  };
+  }
   return (
     <Router>
       <ScrollToTop />
