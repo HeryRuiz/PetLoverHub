@@ -1,14 +1,43 @@
-import React from "react";
-import "./styles/Auth.css";
-import auth from "../images/auth.png";
-import logo2 from "../images/logo2.png";
-import paws from "../images/paws.png";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLock, faEnvelope, faHouse, faUser } from "@fortawesome/free-solid-svg-icons";
+import {
+  faLock,
+  faEnvelope,
+  faHouse,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
+import logo2 from "../images/logo2.png";
+import paws from "../images/paws.png";
+import "./styles/Auth.css";
 function Signup() {
+  const [email, setEmail] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleFirstNameChange = (e) => {
+    setFirstName(e.target.value);
+  };
+
+  const handleLastNameChange = (e) => {
+    setLastName(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
-    <section id="login">
+    <section id="signup">
       <div className="auth__top">
         <p className="auth__redirect">
           <Link to="/">
@@ -16,10 +45,9 @@ function Signup() {
           </Link>
         </p>
         <p className="auth__redirect">
-          Don't have an account? <Link to='/login'>Login</Link>
+          Already have an account? <Link to="/login">Login</Link>
         </p>
       </div>
-      <img src={auth} alt="background image" className="auth__image" />
       <div className="auth__container">
         <div className="auth__left">
           <img src={paws} alt="paws" className="auth__paws2" />
@@ -38,7 +66,7 @@ function Signup() {
         <div className="auth__right">
           <div className="auth__right__div">
             <p className="auth__form__title">Sign up</p>
-            <form action="">
+            <form onSubmit={handleSubmit}>
               <div className="auth__form__div">
                 <label className="auth__input_with_icon">
                   <FontAwesomeIcon icon={faEnvelope} className="auth__icon" />
@@ -46,6 +74,8 @@ function Signup() {
                     type="email"
                     className="auth__input"
                     placeholder="Email"
+                    value={email}
+                    onChange={handleEmailChange}
                     required
                   />
                 </label>
@@ -55,6 +85,8 @@ function Signup() {
                     type="text"
                     className="auth__input"
                     placeholder="First name"
+                    value={firstName}
+                    onChange={handleFirstNameChange}
                     required
                   />
                 </label>
@@ -64,6 +96,8 @@ function Signup() {
                     type="text"
                     className="auth__input"
                     placeholder="Last name"
+                    value={lastName}
+                    onChange={handleLastNameChange}
                     required
                   />
                 </label>
@@ -73,12 +107,16 @@ function Signup() {
                     type="password"
                     className="auth__input"
                     placeholder="Password"
+                    value={password}
+                    onChange={handlePasswordChange}
                     minLength={6}
                     required
                   />
                 </label>
               </div>
-              <button className="auth__button">Sign up</button>
+              <button type="submit" className="auth__button">
+                Sign up
+              </button>
             </form>
           </div>
         </div>

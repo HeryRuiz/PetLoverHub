@@ -1,12 +1,25 @@
-import React from "react";
-import "./styles/Auth.css";
-import auth from "../images/auth.png";
-import logo2 from "../images/logo2.png";
-import paws from "../images/paws.png";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLock, faEnvelope, faHouse } from "@fortawesome/free-solid-svg-icons";
+import logo2 from "../images/logo2.png";
+import paws from "../images/paws.png";
 function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <section id="login">
       <div className="auth__top">
@@ -16,10 +29,9 @@ function Login() {
           </Link>
         </p>
         <p className="auth__redirect">
-          Don't have an account? <Link to='/signup'>Sign up</Link>
+          Don't have an account? <Link to="/signup">Sign up</Link>
         </p>
       </div>
-      <img src={auth} alt="background image" className="auth__image" />
       <div className="auth__container">
         <div className="auth__left">
           <img src={paws} alt="paws" className="auth__paws2" />
@@ -38,7 +50,7 @@ function Login() {
         <div className="auth__right">
           <div className="auth__right__div">
             <p className="auth__form__title">Login</p>
-            <form action="">
+            <form onSubmit={handleSubmit}>
               <div className="auth__form__div">
                 <label className="auth__input_with_icon">
                   <FontAwesomeIcon icon={faEnvelope} className="auth__icon" />
@@ -46,6 +58,8 @@ function Login() {
                     type="email"
                     className="auth__input"
                     placeholder="Email"
+                    value={email}
+                    onChange={handleEmailChange}
                     required
                   />
                 </label>
@@ -55,19 +69,24 @@ function Login() {
                     type="password"
                     className="auth__input"
                     placeholder="Password"
+                    value={password}
+                    onChange={handlePasswordChange}
                     minLength={6}
                     required
                   />
                 </label>
               </div>
-              <button className="auth__button">Login</button>
+              <button type="submit" className="auth__button">
+                Login
+              </button>
               <div className="auth__or__div">
                 <div className="auth__line"></div>
                 <p>Or</p>
                 <div className="auth__line"></div>
               </div>
               <p className="auth__redirect">
-                Forgot password? <Link>Reset password</Link>
+                Forgot password?{" "}
+                <Link to="/reset-password">Reset password</Link>
               </p>
             </form>
           </div>
