@@ -10,6 +10,7 @@ import Home from "./pages/home/Home";
 import Login from "./pages/Auth/Login";
 import Signup from "./pages/Auth/Signup";
 import Dashboard from "./pages/Dash/Dashboard";
+import Password from "./pages/Auth/Password";
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
@@ -42,6 +43,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/reset-password" element={<Password />} />
         {"Private Routes"}
       </Routes>
     </Router>

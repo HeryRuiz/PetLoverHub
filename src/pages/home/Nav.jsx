@@ -7,7 +7,7 @@ import Burger from "./Burger";
 function Nav({ offBurger, onBurger }) {
   return (
     <>
-      <Burger onBurger={onBurger} offBurger={offBurger}/>
+      <Burger onBurger={onBurger} offBurger={offBurger} />
       <nav>
         <div className="nav__container">
           <div className="nav__flex">
@@ -15,7 +15,9 @@ function Nav({ offBurger, onBurger }) {
             <p>Services</p>
             <p>About us</p>
           </div>
-          <img src={logo} alt="Logo" className="nav__logo" />
+          <Link to='/'>
+            <img src={logo} alt="Logo" className="nav__logo" />
+          </Link>
           <div className="nav__smaller">
             <Link to="/login" className="nav__started">
               <div className="nav__back">
@@ -27,7 +29,7 @@ function Nav({ offBurger, onBurger }) {
             <Menu
               className="burger"
               size="30px"
-              onClick={()=>onBurger("burger__container")}
+              onClick={() => onBurger("burger__container")}
             />
           </div>
         </div>
