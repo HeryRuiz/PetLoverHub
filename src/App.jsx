@@ -49,7 +49,6 @@ function App() {
         <Route path="/signup" element={<Signup />} />
 
         {"Private Routes"}
-        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
   );
