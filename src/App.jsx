@@ -9,7 +9,6 @@ import {
 import Home from "./pages/home/Home";
 import Login from "./pages/Auth/Login";
 import Signup from "./pages/Auth/Signup";
-import Dashboard from "./pages/Dash/Dashboard";
 import Layout from "./pages/Layout/Layout";
 
 const ScrollToTop = () => {
