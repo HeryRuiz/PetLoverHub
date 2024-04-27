@@ -39,13 +39,11 @@ function App() {
     <Router>
       <ScrollToTop />
       <Routes>
-        <Route element={<Layout onBurger={onBurger} offBurger={offBurger} />}>
-          <Route
-            path="/"
-            element={<Home onBurger={onBurger} offBurger={offBurger} />}
-          />
-          <Route path="/login" element={<Login />} />
-        </Route>
+        <Route
+          path="/"
+          element={<Home onBurger={onBurger} offBurger={offBurger} />}
+        />
+        <Route path="/login" element={<Login />} />
         <Route path="*" element={<Login />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
