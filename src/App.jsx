@@ -11,6 +11,7 @@ import Login from "./pages/Auth/Login";
 import Signup from "./pages/Auth/Signup";
 import Dashboard from "./pages/Dash/Dashboard";
 import Password from "./pages/Auth/Password";
+import Layout from "./pages/Layout/Layout";
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
@@ -38,7 +39,13 @@ function App() {
     <Router>
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Home onBurger={onBurger} offBurger={offBurger}/>} />
+        <Route element={<Layout onBurger={onBurger} offBurger={offBurger} />}>
+          <Route
+            path="/"
+            element={<Home onBurger={onBurger} offBurger={offBurger} />}
+          />
+          <Route path="/login" element={<Login />} />
+        </Route>
         <Route path="*" element={<Login />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />

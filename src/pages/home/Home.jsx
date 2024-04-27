@@ -4,13 +4,12 @@ import Noti from "./Noti";
 import Banner from "./Banner";
 import Phone from "./Phone";
 import Window from "./Window";
-import Nav from "./Nav";
-import Footer from "./Footer";
+import Nav from "../Layout/Nav";
+import Footer from "../Layout/Footer";
 
-function Home({ onBurger, offBurger }) {
+function Home() {
   return (
     <>
-      <Nav onBurger={onBurger} offBurger={offBurger} />
       <Hero />
       <main>
         <Phone />
