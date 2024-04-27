@@ -11,7 +11,7 @@ import Login from "./pages/Auth/Login";
 import Signup from "./pages/Auth/Signup";
 import Dashboard from "./pages/Dash/Dashboard";
 import Password from "./pages/Auth/Password";
-import Layout from "./pages/Layout/Layout";
+
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
