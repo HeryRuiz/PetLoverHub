@@ -21,18 +21,18 @@ function Hero() {
       <section id="hero">
         <div className="hero__container">
           <div className="hero__flex">
-            <h2>Pet Trainer Hub</h2>
+            <h2>Pet Lover Hub</h2>
             {isSmallScreen ? (
               <p>
-                Elevate your pet training game.
-                Organize, schedule, and book.
+                Elevate your pet owner game.
+                Organize, schedule, and talk.
                 <br />
                 All in one platform.
               </p>
             ) : (
               <p>
-                Elevate your pet training game with our all-in-one platform. <br />
-                Booking to scheduling, our tools empower organization.<br />
+                Elevate your pet owner game with our all-in-one platform. <br />
+                meeting to scheduling, our tools empower interactivity.<br />
                
               </p>
             )}

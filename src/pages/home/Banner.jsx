@@ -10,13 +10,15 @@ function Banner() {
         <div className="banner__container">
           <div className="banner__left">
             <p className="banner__head">
-              Get all the <span className="banner__outline">alerts</span> you
+              Meet all the <span className="banner__outline">friends</span> you
               need.
             </p>
             <p className="banner__body">
-              Take charge of your alerts with our custom notifications.
-              Experience the empowerment of managing both your time and client
-              engagement with ease.
+              Discover a vibrant community of like-minded individuals on our
+              app, where connecting with new friends is just a tap away. Whether
+              you're seeking companionship for yourself or your pet, our
+              platform opens doors to meaningful connections and exciting
+              encounters.
             </p>
             <Link className="banner__redirect">
               <p>Learn More</p>

@@ -29,10 +29,10 @@ function Burger({ onBurger, offBurger }) {
             className="burger__item"
             onClick={() => offBurger("burger__container")}
           >
-            <p>Pricing</p>
+            <p>Forum</p>
             <HandCoins />
           </Link>
-          <Link to="/login" className="top__burger__link">
+          <Link to="/login" className="burger__link">
             Get Started
           </Link>
         </div>

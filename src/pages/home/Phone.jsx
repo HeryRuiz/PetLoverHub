@@ -11,13 +11,13 @@ function Phone() {
         <div className="phone__box">
           <div className="phone__left">
             <p className="phone__head">
-            Get all the <span className="noti__outline">alerts</span> you
-              need.
+              Access a <span className="noti__outline">community</span> anytime
+              you need.
             </p>
             <p className="phone__body">
-              Take charge of your alerts with our custom notifications.
-              Experience the empowerment of managing both your time and client
-              engagement with ease.
+              Access our community anytime, anywhere, on any device you choose.
+              Set up playdates, reply to friends, and meet new people—all on one
+              platform.
             </p>
             <Link className="phone__redirect">
               <p>Learn More</p>
@@ -25,11 +25,9 @@ function Phone() {
             </Link>
           </div>
         </div>
-        <div className="phone__filler">
-
-        </div>
+        <div className="phone__filler"></div>
         <img src={phone} alt="Phone and computer" className="phone__image" />
-        <img src={phone2}  alt="Phone" className="phone__image2" />
+        <img src={phone2} alt="Phone" className="phone__image2" />
       </div>
     </section>
   );
