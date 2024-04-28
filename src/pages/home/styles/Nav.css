@@ -34,15 +34,17 @@ nav {
     display: none;
   }
 }
-.nav__flex p {
+.nav__flex a, .nav__flex a:visited {
+  color: #203161;
   font-weight: 500;
   font-size: 1.05rem;
   transition: all 0.2s ease-in-out;
 }
-.nav__flex p:hover {
+.nav__flex a:hover {
   cursor: pointer;
   color: #f78760;
 }
+
 .nav__started {
   display: flex;
   align-items: center;

@@ -11,9 +11,8 @@ function Nav({ offBurger, onBurger }) {
       <nav>
         <div className="nav__container">
           <div className="nav__flex">
-            <p>Home</p>
-            <p>Services</p>
-            <p>Pricing</p>
+            <Link to="/">Home</Link>
+            <Link to="/login">Pricing</Link>
           </div>
           <Link to='/'>
             <img src={logo} alt="Logo" className="nav__logo" />
