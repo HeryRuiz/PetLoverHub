@@ -6,7 +6,7 @@
 
 </p>
 
-👉 Live Demo: <a href='https://pettrainerhub.vercel.app'>Pet Trainer Hub Demo</a>
+👉 Live Demo: <a href='https://pettrainerhub.vercel.app' target="_blank" >Pet Trainer Hub Demo</a>
 
 <h3>Built using:</h3>
 
