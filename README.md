@@ -24,12 +24,12 @@
 
 <h3 align='center'>Log In Page 🔒</h3>
 <div align='center'>
-  <img src='./readme/login.png'/>
+  <img src='./readme/log.png'/>
 </div>
 <br><br>
 <h3 align='center'>Sign Up Page 🛎️</h3>
 <div align='center'>
-  <img src='./readme/signup.png'/>
+  <img src='./readme/sign.png'/>
 </div>
 <br><br>
 <h3 align='center'>Reset Page 🦾</h3>
