@@ -29,7 +29,7 @@
 <br><br>
 <h3 align='center'>Sign Up Page 🛎️</h3>
 <div align='center'>
-  <img src='./readme/signupp.png'/>
+  <img src='./readme/signup.png'/>
 </div>
 <br><br>
 <h3 align='center'>Reset Page 🦾</h3>
