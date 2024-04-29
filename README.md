@@ -21,7 +21,7 @@
 <br>
 <h3 align='center'>Home Page 🏡</h3>
 <div align='center'>
-  <img src='./readme/log.png'/>
+  <img src='./readme/home.png'/>
 </div>
 <br><br>
 <h3 align='center'>Log In Page 🔒</h3>
