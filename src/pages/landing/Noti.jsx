@@ -14,9 +14,9 @@ function Noti() {
           <div className="noti__item">
             <img src={ray} alt="Owner Image" className="noti__image" />
             <div className="noti__action">
-              <p className="noti__title">Ray has replied to you.</p>
+              <p className="noti__title">Ray has liked your post</p>
               <p className="noti__des">
-                Ray has replied to your post. "I loved the place. Great to
+                Ray has liked to your post. "I loved the place. Great to
                 finally meet you bryan".
               </p>
             </div>
