@@ -6,7 +6,7 @@ import {
   Route,
   useLocation,
 } from "react-router-dom";
-import Home from "./pages/home/Home";
+import Home from "./pages/landing/Home";
 import Login from "./pages/Auth/Login";
 import Signup from "./pages/Auth/Signup";
 import Password from "./pages/Auth/Password";
