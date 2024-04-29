@@ -29,7 +29,7 @@ function Burger({ onBurger, offBurger }) {
             className="burger__item"
             onClick={() => offBurger("burger__container")}
           >
-            <p>Forum</p>
+            <p>All Post</p>
             <HandCoins />
           </Link>
           <Link to="/login" className="burger__link">
