@@ -2,16 +2,15 @@
 
 <h2>About the project</h2>
 
-<p>Pet Trainer Hub is a pet trainer management app focused on organizing pet trainers schedules, bookings, and calendars. Developed with React and Firebase for authentication, it ensures security and accessibility.
+<p>Pet Lover Hub is a pet lover app focused on a community of pet owners, allowing them to interact and post about their animals and themselves.
 
 </p>
 
-👉 Live Demo: <a href='https://pettrainerhub.vercel.app' target="_blank" >Pet Trainer Hub Demo</a>
+👉 Live Demo: <a href='https://pettrainerhub.vercel.app' target="_blank" >Pet Lover Hub Demo</a>
 
 <h3>Built using:</h3>
 
 » React JS <br>
-» Firebase <br>
 » CSS <br>
 » HTML<br>
 
