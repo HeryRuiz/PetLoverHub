@@ -56,8 +56,8 @@ function Signup() {
               <h2 className="auth__title">Welcome to</h2>
               <img src={logo2} alt="Logo" className="auth__logo" />
               <p className="auth__des">
-                Elevate your pet training game with our all-in-one platform.
-                Booking to scheduling, our tools empower organization.
+                Elevate your pet owner game with our all-in-one platform. Talk
+                and schedule with other owners.
               </p>
             </div>
             <img src={paws} alt="paws" className="auth__paws1" />
