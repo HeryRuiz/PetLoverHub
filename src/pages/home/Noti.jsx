@@ -36,7 +36,7 @@ function Noti() {
           <div className="noti__item noti__three">
             <img src={sophie} alt="Owner Image" className="noti__image" />
             <div className="noti__action">
-              <p className="noti__title">Sophie has reposted a post.</p>
+              <p className="noti__title">Sophie has liked a post.</p>
               <p className="noti__des">
                 "My dog finally had a playdate, and he looks so happy. We have
                 another one tomorrow".

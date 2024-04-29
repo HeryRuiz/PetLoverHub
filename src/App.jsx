@@ -41,6 +41,7 @@ function App() {
         <Route
           path="/"
           element={<Home onBurger={onBurger} offBurger={offBurger} />}
+          Platform
         />
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<Login />} />

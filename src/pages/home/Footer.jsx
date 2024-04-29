@@ -11,7 +11,7 @@ function Footer() {
                 <img src={logo} alt="Logo" className='footer__logo' />
                 <div className='footer__flex2'>
                     <Link>Home</Link>
-                    <Link>Services</Link>
+                    <Link>Post</Link>
                     <Link>About us</Link>
                 </div>
             </div>

@@ -19,7 +19,11 @@
 
 <h2>Project Screenshots</h2>
 <br>
-
+<h3 align='center'>Home Page 🏡</h3>
+<div align='center'>
+  <img src='./readme/log.png'/>
+</div>
+<br><br>
 <h3 align='center'>Log In Page 🔒</h3>
 <div align='center'>
   <img src='./readme/log.png'/>
