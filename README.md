@@ -2,7 +2,7 @@
 
 <h2>About the project</h2>
 
-<p>Pet Lover Hub is a pet lover app focused on a community of pet owners, allowing them to interact and post about their animals and themselves.
+<p>Pet Lover Hub is a pet lover app focused on building a community of pet owners. It was developed using React and Firebase for authentication, as well as Firebase Storage for uploading and retrieving files.
 
 </p>
 
