@@ -1,5 +1,5 @@
 .burger__container {
-  width: 96%;
+  width: 100%;
   height: 100vh;
   max-height: 100vh;
   z-index: 100;
@@ -7,12 +7,7 @@
   padding: 1rem;
   background-color: #FFFFFF;
   display: none;
-  @media (max-width: 500px) {
-    width: 94%;
-  }
-  @media (max-width: 350px) {
-    width: 92%;
-  }
+
 }
 .burger__top {
   display: flex;

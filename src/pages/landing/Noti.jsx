@@ -16,8 +16,8 @@ function Noti() {
             <div className="noti__action">
               <p className="noti__title">Ray has saved your post</p>
               <p className="noti__des">
-                Ray has saved to your post. "I loved the place. Great to finally
-                meet you bryan".
+                Excellent update! Bryan has saved your post. Your content
+                shines! Keep up the fantastic work!
               </p>
             </div>
           </div>
@@ -27,8 +27,8 @@ function Noti() {
             <div className="noti__action">
               <p className="noti__title">Bryan has saved your post.</p>
               <p className="noti__des">
-                Bryan has saved to your post. "Went to the dog park today and
-                met Ray and his dog".
+                Exciting news! Ray has saved your post. Your content is
+                resonating! Keep it up!
               </p>
             </div>
           </div>
@@ -38,7 +38,8 @@ function Noti() {
             <div className="noti__action">
               <p className="noti__title">Sophie has saved a post.</p>
               <p className="noti__des">
-                Sophie has saved to your post. "My dog finally had a playdate with Bryans dog".
+                Wonderful update! Ray has saved your post. Your content is
+                making waves!
               </p>
             </div>
           </div>

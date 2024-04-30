@@ -16,10 +16,9 @@
 .top__flex {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   gap: 1rem;
 }
-
 
 .top__unselected,
 .top__selected {
@@ -35,7 +34,6 @@
   border-radius: 0.7rem;
 }
 .top__avatar {
-
   background-color: rgb(187, 185, 185);
   border-radius: 100%;
   display: flex;
@@ -43,11 +41,43 @@
   align-items: center;
   height: 2.5rem;
   width: 2.5rem;
-
 }
-.top__profile{
+.top__profile {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
+}
+.dropdown {
+  background-color: #f4f9fc;
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+  border: 1px solid rgb(233, 233, 233);
+  border-top: none;
+  display: none;
+  right: 0;
+  padding: 1rem;
+  position: absolute;
+  width: 13.375rem;
+  z-index: 100;
+  @media (max-width: 500px) {
+    margin-right: 1rem;
+  }
+}
+.dropdown__item {
+  border-radius: 0.625rem;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  max-width: 10.625rem;
+  padding: 0.5rem;
+  transition: all 0.1s ease-in-out;
+}
+.dropdown__item:hover {
+  background-color: #203161;
+  color: white;
+  padding: 0.5rem;
 }
