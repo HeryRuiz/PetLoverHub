@@ -2,11 +2,19 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLock, faEnvelope, faHouse } from "@fortawesome/free-solid-svg-icons";
+import {
+  sendPasswordResetEmail,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
+import { auth } from "../firebase/firebase";
+import { useNavigate } from "react-router-dom";
 import logo2 from "../images/logo2.png";
 import paws from "../images/paws.png";
+
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -16,8 +24,17 @@ function Login() {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+      setEmail("");
+      setPassword("");
+      navigate("/home");
+    } catch {
+      setError("Invalid email or password");
+      document.querySelector(".form__error").style.opacity = "1";
+    }
   };
 
   return (
@@ -40,8 +57,8 @@ function Login() {
               <h2 className="auth__title">Login to</h2>
               <img src={logo2} alt="Logo" className="auth__logo" />
               <p className="auth__des">
-                Elevate your pet owner game with our all-in-one platform.
-                Talk and schedule with other owners.
+                Access a community anytime, anywhere, on any device you choose.
+                Download, see, and adore all pets on one platform.
               </p>
             </div>
             <img src={paws} alt="paws" className="auth__paws1" />

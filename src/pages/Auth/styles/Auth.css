@@ -116,7 +116,7 @@
   border: none;
   background-color: transparent;
   font-size: 1rem;
-  color: #727171;
+  color: #000000;
   width: 90%;
 }
 .auth__input:focus {
