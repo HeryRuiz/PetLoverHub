@@ -41,6 +41,6 @@
 <br><br>
 <h3 align='center'>Home Page 🏡</h3>
 <div align='center'>
-  <img src='./readme/home.png'/>
+  <img src='./readme/homeimg.png'/>
 </div>
 <br><br>
