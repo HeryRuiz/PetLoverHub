@@ -80,17 +80,6 @@ function App() {
             />
           }
         />
-        <Route
-          path="/home"
-          element={
-            <Home
-              onBurger={onBurger}
-              offBurger={offBurger}
-              popup={popup}
-              signedin={signedin}
-            />
-          }
-        />
         <Route path="*" element={<Login popup={popup} />} />
         <Route path="/login" element={<Login popup={popup} />} />
         <Route path="/signup" element={<Signup popup={popup} />} />
