@@ -49,8 +49,8 @@ function Password({ popup }) {
                 <h2 className="auth__title">Login to</h2>
                 <img src={logo2} alt="Logo" className="auth__logo" />
                 <p className="auth__des">
-                  Elevate your pet training game with our all-in-one platform.
-                  Booking to scheduling, our tools empower organization.
+                  Access a community anytime, anywhere, on any device you
+                  choose. Download, see, and adore all pets on one platform.
                 </p>
               </div>
               <img src={paws} alt="paws" className="auth__paws1" />
