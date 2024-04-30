@@ -2,10 +2,10 @@ import React from 'react'
 import Top from './Top'
 import Grid from './Grid'
 
-function Home  () {
+function Home  ({popup}) {
   return (
     <>
-    <Top />
+    <Top popup={popup}/>
     <Grid />
     </>
   )

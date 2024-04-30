@@ -1,13 +1,7 @@
 import React, { useEffect, useState } from "react";
 import small from "../images/logosmall.png";
 import "./styles/Top.css";
-import {
-  ChevronDown,
-  CircleAlert,
-  CircleCheckBig,
-  Plus,
-  X,
-} from "lucide-react";
+import { CircleAlert, CircleCheckBig, Plus, X } from "lucide-react";
 import {
   faAngleDown,
   faAngleUp,
@@ -16,22 +10,55 @@ import {
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link, useNavigate } from "react-router-dom";
-import { auth } from "../firebase/firebase";
-function Top() {
+import { auth, database, storage } from "../firebase/firebase";
+import { ref, set, push } from "firebase/database";
+import { ref as storageRef, uploadBytes } from "firebase/storage";
+
+function Top({ popup }) {
+  
   const navigate = useNavigate();
   const [dropdown, setDropDown] = useState(false);
   const [uploadFile, setUploadFile] = useState(null);
 
-  useEffect(() => {
-    if (dropdown === true) {
-      document.querySelector(".dropdown").style.display = "block";
-    } else {
-      document.querySelector(".dropdown").style.display = "none";
-    }
-  }, [dropdown]);
-
   const isImage = (file) => {
-    return file.type.startsWith("image/");
+    const acceptedExtensions = ["jpg", "jpeg", "png", "gif"];
+    const fileName = file.name.toLowerCase();
+    const fileExtension = fileName.split(".").pop();
+    return acceptedExtensions.includes(fileExtension);
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      if (uploadFile && isImage(uploadFile)) {
+        const fileData = {
+          user: auth.currentUser.uid,
+        };
+        const newFileKey = push(ref(database, "files")).key;
+        await set(ref(database, `files/${newFileKey}`), fileData);
+        const storageRefPath = storageRef(storage, `files/${newFileKey}`);
+        await uploadBytes(storageRefPath, uploadFile);
+        localStorage.setItem("hasSubmittedBefore", "true");
+        popup("popup__success");
+        event.target.reset();
+        closeUpdate();
+      } else {
+        popup("popup__fail");
+        console.error("Error: Please upload an image file.");
+      }
+    } catch (error) {
+      console.log("Error uploading data:", error);
+    }
+  };
+
+  const closeUpdate = () => {
+    document.querySelector(".upload__modal").style.display = "none";
+    document.querySelector(".upload__dark").style.display = "none";
+  };
+
+  const openUpdate = () => {
+    document.querySelector(".upload__modal").style.display = "block";
+    document.querySelector(".upload__dark").style.display = "block";
   };
 
   const handleSignOut = () => {
@@ -46,19 +73,13 @@ function Top() {
       });
   };
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-  };
-
-  const closeUpdate = () => {
-    document.querySelector(".upload__modal").style.display = "none";
-    document.querySelector(".upload__dark").style.display = "none";
-  };
-
-  const openUpdate = () => {
-    document.querySelector(".upload__modal").style.display = "block";
-    document.querySelector(".upload__dark").style.display = "block";
-  };
+  useEffect(() => {
+    if (dropdown === true) {
+      document.querySelector(".dropdown").style.display = "block";
+    } else {
+      document.querySelector(".dropdown").style.display = "none";
+    }
+  }, [dropdown]);
 
   return (
     <>
@@ -107,9 +128,10 @@ function Top() {
             <input
               type="file"
               placeholder="Title"
-              className="upload__input "
+              className="upload__input"
               id="file"
               required
+              onChange={(event) => setUploadFile(event.target.files[0])}
             />
           </div>
           <button className="upload__button" type="submit">
