@@ -20,6 +20,7 @@
     "@fullcalendar/interaction": "^6.1.11",
     "@fullcalendar/react": "^6.1.11",
     "@fullcalendar/timegrid": "^6.1.11",
+    "firebase": "^10.11.1",
     "fontawesome-free": "^1.0.4",
     "lucide": "^0.372.0",
     "lucide-react": "^0.372.0",
