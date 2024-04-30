@@ -6,15 +6,15 @@ import Phone from "./Phone";
 import Nav from "./Nav";
 import Footer from "./Footer";
 
-function Landing({ onBurger, offBurger }) {
+function Landing({ onBurger, offBurger , signedin}) {
   return (
     <>
-      <Nav onBurger={onBurger} offBurger={offBurger}/>
-      <Hero />
+      <Nav onBurger={onBurger} offBurger={offBurger} signedin={signedin}/>
+      <Hero signedin={signedin}/>
       <main>
-        <Phone />
-        <Noti />
-        <Banner />
+        <Phone signedin={signedin}/>
+        <Noti signedin={signedin}/>
+        <Banner signedin={signedin}/>
       </main>
       <Footer />
     </>

@@ -16,6 +16,7 @@ import {
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link, useNavigate } from "react-router-dom";
+import { auth } from "../firebase/firebase";
 function Top() {
   const navigate = useNavigate();
   const [dropdown, setDropDown] = useState(false);
@@ -29,6 +30,26 @@ function Top() {
     }
   }, [dropdown]);
 
+  const isImage = (file) => {
+    return file.type.startsWith("image/");
+  };
+
+  const handleSignOut = () => {
+    auth
+      .signOut()
+      .then(() => {
+        navigate("/login");
+        return;
+      })
+      .catch((error) => {
+        return;
+      });
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+  };
+
   const closeUpdate = () => {
     document.querySelector(".upload__modal").style.display = "none";
     document.querySelector(".upload__dark").style.display = "none";
@@ -38,12 +59,7 @@ function Top() {
     document.querySelector(".upload__modal").style.display = "block";
     document.querySelector(".upload__dark").style.display = "block";
   };
-  const isImage = (file) => {
-    return file.type.startsWith("image/");
-  };
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-  };
+
   return (
     <>
       <nav id="top">
@@ -72,7 +88,7 @@ function Top() {
             <FontAwesomeIcon icon={faUser} />
           </Link>
 
-          <div className="dropdown__item">
+          <div className="dropdown__item" onClick={handleSignOut}>
             <p>Sign Out</p>
             <FontAwesomeIcon icon={faRightFromBracket} />
           </div>

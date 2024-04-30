@@ -3,7 +3,7 @@ import "./styles/Banner.css";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import banner from "../images/banner.png";
-function Banner() {
+function Banner({signedin}) {
   return (
     <section id="banner">
       <div className="banner__border">
@@ -20,9 +20,9 @@ function Banner() {
               platform opens doors to meaningful connections and exciting
               encounters.
             </p>
-            <Link className="banner__redirect">
+            <Link className="banner__redirect" to={signedin? "/home" : "/login"}>
               <p>Learn More</p>
-              <ArrowRight className="banner__icon" />
+              <ArrowRight className="banner__icon" size={'40px'}/>
             </Link>
           </div>
           <img src={banner} alt="Dog sitting" className="banner__image" />

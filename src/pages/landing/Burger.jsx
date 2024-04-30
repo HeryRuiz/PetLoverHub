@@ -3,7 +3,7 @@ import "./styles/Burger.css";
 import logo from "../images/logosmall.png";
 import { HandCoins, Home, X } from "lucide-react";
 import { Link } from "react-router-dom";
-function Burger({ onBurger, offBurger }) {
+function Burger({ onBurger, offBurger, signedin}) {
   return (
     <section id="burger">
       <div className="burger__container">
@@ -20,6 +20,7 @@ function Burger({ onBurger, offBurger }) {
           <Link
             className="burger__item"
             onClick={() => offBurger("burger__container")}
+            to='/'
           >
             <p>Home</p>
             <Home />
@@ -28,12 +29,13 @@ function Burger({ onBurger, offBurger }) {
           <Link
             className="burger__item"
             onClick={() => offBurger("burger__container")}
+            to={signedin? "/login" : "/home"}
           >
-            <p>All Post</p>
+            <p>Start Posting</p>
             <HandCoins />
           </Link>
-          <Link to="/login" className="burger__link">
-            Get Started
+          <Link to={signedin? "/login" : "/home"} className="burger__link">
+          {signedin? "Explore" : "Get Started"}
           </Link>
         </div>
       </div>

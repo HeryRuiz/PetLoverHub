@@ -2,7 +2,7 @@ import React from "react";
 import "./styles/Hero.css";
 import { Link } from "react-router-dom";
 
-function Hero() {
+function Hero({signedin}) {
 
   return (
     <>
@@ -16,7 +16,7 @@ function Hero() {
               <br />
             </p>
 
-            <Link className="hero__button">Get Started</Link>
+            <Link className="hero__button" to={signedin? "/home" : "/login"} >{signedin? "Explore" : "Get Started"}</Link>
           </div>
         </div>
       </section>
