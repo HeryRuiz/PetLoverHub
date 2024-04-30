@@ -14,10 +14,10 @@ function Noti() {
           <div className="noti__item">
             <img src={ray} alt="Owner Image" className="noti__image" />
             <div className="noti__action">
-              <p className="noti__title">Ray has liked your post</p>
+              <p className="noti__title">Ray has saved your post</p>
               <p className="noti__des">
-                Ray has liked to your post. "I loved the place. Great to
-                finally meet you bryan".
+                Ray has saved to your post. "I loved the place. Great to finally
+                meet you bryan".
               </p>
             </div>
           </div>
@@ -25,9 +25,9 @@ function Noti() {
           <div className="noti__item noti__two">
             <img src={bryan} alt="Owner Image" className="noti__image" />
             <div className="noti__action">
-              <p className="noti__title">Bryan has liked your post.</p>
+              <p className="noti__title">Bryan has saved your post.</p>
               <p className="noti__des">
-                Bryan has liked to your post. "Went to the dog park today and
+                Bryan has saved to your post. "Went to the dog park today and
                 met Ray and his dog".
               </p>
             </div>
@@ -36,10 +36,9 @@ function Noti() {
           <div className="noti__item noti__three">
             <img src={sophie} alt="Owner Image" className="noti__image" />
             <div className="noti__action">
-              <p className="noti__title">Sophie has liked a post.</p>
+              <p className="noti__title">Sophie has saved a post.</p>
               <p className="noti__des">
-                "My dog finally had a playdate, and he looks so happy. We have
-                another one tomorrow".
+                Sophie has saved to your post. "My dog finally had a playdate with Bryans dog".
               </p>
             </div>
           </div>
