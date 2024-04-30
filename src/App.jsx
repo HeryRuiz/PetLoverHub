@@ -22,6 +22,7 @@ const ScrollToTop = () => {
 };
 
 function App() {
+
   function offBurger(con) {
     const element = document.querySelector(`.${con}`);
     if (element) {
@@ -35,6 +36,13 @@ function App() {
       element.style.display = "block";
     }
   }
+
+  function popup(pop) {
+    document.querySelector(`.${pop}`).style.top = "1rem";
+    setTimeout(() => {
+        document.querySelector(`.${pop}`).style.top = "-100px";
+    }, 2000);
+}
   return (
     <Router>
       <ScrollToTop />
@@ -46,14 +54,13 @@ function App() {
         />
         <Route 
           path="/home"
-          element={<Home onBurger={onBurger} offBurger={offBurger} />}
+          element={<Home onBurger={onBurger} offBurger={offBurger} popup={popup} />}
           Platform
         />
-        <Route path="/login" element={<Login />} />
-        <Route path="*" element={<Login />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/reset-password" element={<Password />} />
+        <Route path="*" element={<Login popup={popup}/>} />
+        <Route path="/login" element={<Login popup={popup} />} />
+        <Route path="/signup" element={<Signup popup={popup}/>} />
+        <Route path="/reset-password" element={<Password popup={popup} />} />
         {"Private Routes"}
       </Routes>
     </Router>
