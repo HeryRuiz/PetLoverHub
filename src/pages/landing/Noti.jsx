@@ -17,7 +17,7 @@ function Noti() {
               <p className="noti__title">Ray has saved your post</p>
               <p className="noti__des">
                 Excellent update! Bryan has saved your post. Your content
-                shines! Keep up the fantastic work!
+                shines!
               </p>
             </div>
           </div>
@@ -51,8 +51,8 @@ function Noti() {
           </p>
           <p className="noti__body">
             Receive notifications with our interactive application. Whether it's
-            keeping track of your replies or discovering new friends for both
-            you and your pet, our app ensures you're always in the loop.
+            keeping track of your saves or discovering new adorable friends. Our
+            app ensures you're always in the loop.
           </p>
           <Link className="noti__redirect">
             <p>Learn More</p>

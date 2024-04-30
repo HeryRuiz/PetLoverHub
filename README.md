@@ -23,11 +23,6 @@
   <img src='./readme/home.png'/>
 </div>
 <br><br>
-<h3 align='center'>Home Page 🏡</h3>
-<div align='center'>
-  <img src='./readme/main.png'/>
-</div>
-<br><br>
 
 <h3 align='center'>Log In Page 🔒</h3>
 <div align='center'>
@@ -42,5 +37,10 @@
 <h3 align='center'>Reset Page 🦾</h3>
 <div align='center'>
   <img src='./readme/reset.png'/>
+</div>
+<br><br>
+<h3 align='center'>Home Page 🏡</h3>
+<div align='center'>
+  <img src='./readme/main.png'/>
 </div>
 <br><br>

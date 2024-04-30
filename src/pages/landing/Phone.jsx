@@ -15,8 +15,8 @@ function Phone() {
               you need.
             </p>
             <p className="phone__body">
-              Access our community anytime, anywhere, on any device you choose.
-              Set up playdates, reply to friends, and meet new people—all on one
+              Access a community anytime, anywhere, on any device you choose.
+              Download, see, and adore all pets on one
               platform.
             </p>
             <Link className="phone__redirect">
