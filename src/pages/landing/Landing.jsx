@@ -6,7 +6,7 @@ import Phone from "./Phone";
 import Nav from "./Nav";
 import Footer from "./Footer";
 
-function Home({ onBurger, offBurger }) {
+function Landing({ onBurger, offBurger }) {
   return (
     <>
       <Nav onBurger={onBurger} offBurger={offBurger}/>
@@ -21,4 +21,4 @@ function Home({ onBurger, offBurger }) {
   );
 }
 
-export default Home;
+export default Landing;

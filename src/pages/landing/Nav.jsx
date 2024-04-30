@@ -8,7 +8,7 @@ function Nav({ offBurger, onBurger }) {
   return (
     <>
       <Burger onBurger={onBurger} offBurger={offBurger} />
-      <nav>
+      <nav id="nav">
         <div className="nav__container">
           <div className="nav__flex">
             <Link to="/">Home</Link>

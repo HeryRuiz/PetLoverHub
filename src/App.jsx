@@ -6,10 +6,11 @@ import {
   Route,
   useLocation,
 } from "react-router-dom";
-import Home from "./pages/landing/Home";
+import Landing from "./pages/landing/Landing";
 import Login from "./pages/Auth/Login";
 import Signup from "./pages/Auth/Signup";
 import Password from "./pages/Auth/Password";
+import Home from "./pages/home/Home";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -40,6 +41,11 @@ function App() {
       <Routes>
         <Route
           path="/"
+          element={<Landing onBurger={onBurger} offBurger={offBurger} />}
+          Platform
+        />
+        <Route 
+          path="/home"
           element={<Home onBurger={onBurger} offBurger={offBurger} />}
           Platform
         />

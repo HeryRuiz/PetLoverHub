@@ -23,6 +23,7 @@
     "fontawesome-free": "^1.0.4",
     "lucide": "^0.372.0",
     "lucide-react": "^0.372.0",
+    "masonry-layout": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.0"
