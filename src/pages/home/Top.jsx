@@ -15,7 +15,6 @@ import { ref, set, push } from "firebase/database";
 import { ref as storageRef, uploadBytes } from "firebase/storage";
 
 function Top({ popup }) {
-  
   const navigate = useNavigate();
   const [dropdown, setDropDown] = useState(false);
   const [uploadFile, setUploadFile] = useState(null);
@@ -104,11 +103,6 @@ function Top({ popup }) {
 
       <div className="dropdown__div">
         <div className="dropdown">
-          <Link className="dropdown__item" to="/account">
-            <p>Account</p>
-            <FontAwesomeIcon icon={faUser} />
-          </Link>
-
           <div className="dropdown__item" onClick={handleSignOut}>
             <p>Sign Out</p>
             <FontAwesomeIcon icon={faRightFromBracket} />
