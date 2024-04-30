@@ -20,7 +20,7 @@
 <br>
 <h3 align='center'>Landing Page 🌎</h3>
 <div align='center'>
-  <img src='./readme/home.png'/>
+  <img src='./readme/landing.png'/>
 </div>
 <br><br>
 
@@ -41,6 +41,6 @@
 <br><br>
 <h3 align='center'>Home Page 🏡</h3>
 <div align='center'>
-  <img src='./readme/main.png'/>
+  <img src='./readme/home.png'/>
 </div>
 <br><br>
