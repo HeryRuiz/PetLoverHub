@@ -28,7 +28,6 @@ function Login({ popup }) {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-
       await signInWithEmailAndPassword(auth, email, password);
       popup("popup__success");
       setEmail("");

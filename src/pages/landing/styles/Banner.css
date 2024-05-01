@@ -1,24 +1,24 @@
 #banner {
-  padding: 5rem 1rem;
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
+  padding: 5rem 1rem;
   @media (max-width: 400px) {
     padding: 5rem 0.5rem;
   }
 }
 .banner__border {
-  border: 11px solid #acd2e9;
-  width: 100%;
-  max-width: 75rem;
   border-radius: 1.7rem;
+  border: 11px solid #acd2e9;
+  max-width: 75rem;
+  width: 100%;
 }
 .banner__container {
   background-color: #f67c52;
-  height: 29.75rem;
   border-radius: 1rem;
   color: white;
   display: flex;
+  height: 29.75rem;
   justify-content: center;
   @media (max-width: 1200px) {
     justify-content: center;
@@ -28,17 +28,17 @@
   }
 }
 .banner__left {
-  width: 100%;
-  max-width: 37rem;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   gap: 2rem;
+  justify-content: center;
+  max-width: 37rem;
+  width: 100%;
   @media (max-width: 1200px) {
-    max-width: 50rem;
-    text-align: center;
     align-items: center;
+    max-width: 50rem;
     padding: 0rem 1rem;
+    text-align: center;
   }
   @media (max-width: 400px) {
     padding: 0rem 0.5rem;
@@ -56,8 +56,8 @@
 }
 .banner__outline {
   background-color: #acd2e9;
-  padding: 0rem 0.5rem;
   border-radius: 0.5rem;
+  padding: 0rem 0.5rem;
 }
 .banner__body {
   font-weight: 400;
@@ -70,13 +70,13 @@
   }
 }
 .banner__redirect {
+  align-items: center;
+  color: #ffffff;
   display: flex;
   gap: 1rem;
-  position: relative;
-  color: #ffffff;
-  transition: all 0.2s ease-in-out;
   max-width: 14rem;
-  align-items: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
 }
 .banner__redirect:hover {
   color: #71bdec;
@@ -89,9 +89,9 @@
   }
 }
 .banner__icon {
-  padding: 0.5rem;
   background-color: #f0b7a5;
   border-radius: 0.5rem;
+  padding: 0.5rem;
   @media (max-width: 520px) {
     padding: 0.3rem;
   }
@@ -103,12 +103,12 @@
   }
 }
 .banner__redirect {
+  align-items: center;
   display: flex;
   gap: 1rem;
+  max-width: 14rem;
   position: relative;
   transition: all 0.2s ease-in-out;
-  max-width: 14rem;
-  align-items: center;
 }
 .banner__redirect p {
   font-size: 1.7rem;
@@ -121,9 +121,9 @@
   }
 }
 .banner__icon {
-  padding: 0.5rem;
   background-color: #f0b7a5;
   border-radius: 0.5rem;
+  padding: 0.5rem;
   @media (max-width: 520px) {
     padding: 0.3rem;
   }

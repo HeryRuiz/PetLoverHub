@@ -4,7 +4,7 @@ import phone from "../images/phone.png";
 import phone2 from "../images/phone2.png";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-function Phone({signedin}) {
+function Phone({ signedin }) {
   return (
     <section id="phone">
       <div className="phone__container">
@@ -16,12 +16,14 @@ function Phone({signedin}) {
             </p>
             <p className="phone__body">
               Access a community anytime, anywhere, on any device you choose.
-              Download, see, and adore all pets on one
-              platform.
+              Download, see, and adore all pets on one platform.
             </p>
-            <Link className="phone__redirect" to={signedin? "/home" : "/login"}>
+            <Link
+              className="phone__redirect"
+              to={signedin ? "/home" : "/login"}
+            >
               <p>Learn More</p>
-              <ArrowRight className="phone__icon" size={'40px'}/>
+              <ArrowRight className="phone__icon" size={"40px"} />
             </Link>
           </div>
         </div>

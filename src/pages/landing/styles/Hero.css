@@ -1,25 +1,25 @@
 #hero {
-  height: 90vh;
-  width: 100%;
-  background-color: #acd2e9;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  background-image: url('./hero.png');
-  background-repeat: no-repeat;
+  background-color: #acd2e9;
+  background-image: url("./hero.png");
   background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  width: 100%;
   @media (max-width: 500px) {
+    background-image: url("./hero2.jpg");
     height: 92vh;
-    background-image: url('./hero2.jpg');
   }
 }
 .hero__flex {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 0rem 1rem;
   margin-bottom: 5rem;
+  padding: 0rem 1rem;
 }
 .hero__flex h2 {
   color: #1d2d32;
@@ -41,9 +41,9 @@
   }
 }
 .hero__flex p {
-  text-align: center;
   font-weight: 600;
   margin-bottom: 1rem;
+  text-align: center;
   @media (max-width: 800px) {
     font-size: 0.9rem;
   }
@@ -53,13 +53,13 @@
 }
 .hero__button {
   background-color: #f67c52;
-  color: white;
-  padding: 0.57rem 2rem 0.57rem 2rem;
   border-radius: 0.5rem;
+  color: white;
   font-size: 1.2rem;
   font-weight: 500;
+  padding: 0.57rem 2rem 0.57rem 2rem;
   transition: all 0.2s ease-in-out;
 }
-.hero__button:hover{
-    background-color: #f7916f;
+.hero__button:hover {
+  background-color: #f7916f;
 }

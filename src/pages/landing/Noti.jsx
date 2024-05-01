@@ -6,7 +6,7 @@ import sophie from "../images/sophie.jpg";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-function Noti({signedin}) {
+function Noti({ signedin }) {
   return (
     <section id="noti">
       <div className="noti__container">
@@ -54,9 +54,9 @@ function Noti({signedin}) {
             keeping track of your saves or discovering new adorable friends. Our
             app ensures you're always in the loop.
           </p>
-          <Link className="noti__redirect" to={signedin? "/home" : "/login"}>
+          <Link className="noti__redirect" to={signedin ? "/home" : "/login"}>
             <p>Learn More</p>
-            <ArrowRight className="noti__icon" size={'40px'}/>
+            <ArrowRight className="noti__icon" size={"40px"} />
           </Link>
           <p className="noti__redirect"></p>
         </div>

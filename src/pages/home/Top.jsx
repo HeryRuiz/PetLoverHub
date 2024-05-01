@@ -92,7 +92,9 @@ function Top({ popup }) {
             <p className="top__selected">Home</p>
           </div>
           <div className="top__profile" onClick={() => setDropDown(!dropdown)}>
-            <div className="top__avatar">{auth.currentUser.email[0].toUpperCase()}</div>
+            <div className="top__avatar">
+              {auth.currentUser.email[0].toUpperCase()}
+            </div>
             <FontAwesomeIcon icon={dropdown ? faAngleUp : faAngleDown} />
           </div>
         </div>

@@ -1,16 +1,14 @@
-
 body {
   margin: 0;
-  background-color: #F4F9FC;
+  background-color: #f4f9fc;
 }
 
-*{
+* {
   text-decoration: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-
 }
 .popup__success {
   background-color: #eafbf2;

@@ -1,8 +1,8 @@
 .top__container {
-  padding: 1rem 1rem;
   border-bottom: 1px solid rgb(233, 233, 233);
   display: flex;
   justify-content: space-between;
+  padding: 1rem 1rem;
   @media (max-width: 350px) {
     padding: 1rem 0rem 1rem 0rem;
   }
@@ -14,54 +14,54 @@
   }
 }
 .top__flex {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   gap: 1rem;
+  justify-content: center;
 }
 
 .top__unselected,
 .top__selected {
-  font-weight: 500;
   color: #203161;
-  font-size: 1.1rem;
   cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 .top__selected {
   background-color: #203161;
-  padding: 0.6rem;
-  color: white;
   border-radius: 0.7rem;
+  color: white;
+  padding: 0.6rem;
 }
 .top__avatar {
+  align-items: center;
   background-color: rgb(187, 185, 185);
   border-radius: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 2.5rem;
+  justify-content: center;
   width: 2.5rem;
 }
 .top__profile {
-  display: flex;
   align-items: center;
-  gap: 0.5rem;
   cursor: pointer;
+  display: flex;
+  gap: 0.5rem;
 }
 .upload {
+  align-items: center;
   background-color: #203161;
+  border-radius: 100%;
   border: 1px solid #203161;
-  padding: 1rem;
+  bottom: 2rem;
+  color: white;
+  cursor: pointer;
   display: flex;
   justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-  color: white;
+  padding: 1rem;
   position: fixed;
-  bottom: 2rem;
   right: 2rem;
   z-index: 4;
-  cursor: pointer;
 }
 /* dropdown */
 
@@ -69,12 +69,12 @@
   background-color: #f4f9fc;
   border-bottom-left-radius: 0.625rem;
   border-bottom-right-radius: 0.625rem;
-  border: 1px solid rgb(233, 233, 233);
   border-top: none;
+  border: 1px solid rgb(233, 233, 233);
   display: none;
-  right: 0;
   padding: 1rem;
   position: absolute;
+  right: 0;
   width: 13.375rem;
   z-index: 4;
   @media (max-width: 500px) {
@@ -82,12 +82,12 @@
   }
 }
 .dropdown__item {
+  align-items: center;
   border-radius: 0.625rem;
   color: #000000;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin: auto;
   max-width: 10.625rem;
   padding: 0.5rem;
@@ -102,31 +102,31 @@
 /* upload */
 
 .upload__dark {
-  width: 100vw;
+  background-color: #000000;
+  display: none;
   height: 100vh;
+  opacity: 0.9;
   position: fixed;
   top: 0;
-  background-color: #000000;
-  opacity: 0.9;
+  width: 100vw;
   z-index: 5;
-  display: none;
 }
 .upload__modal {
+  background-color: white;
+  border-radius: 0.9rem;
+  box-sizing: border-box;
   display: none;
-  z-index: 6;
   height: 100%;
-  width: 100%;
-  max-width: 50rem;
+  left: 50%;
+  margin: 1rem;
   max-height: 27rem;
+  max-width: 50rem;
+  padding: 1rem;
+  position: fixed;
   top: 50%;
   transform: translate(-50%, -50%);
-  left: 50%;
-  background-color: white;
-  position: fixed;
-  border-radius: 0.9rem;
-  padding: 1rem;
-  box-sizing: border-box;
-  margin: 1rem;
+  width: 100%;
+  z-index: 6;
   @media (max-width: 900px) {
     max-width: 40rem;
   }
@@ -139,15 +139,15 @@
   }
 }
 .upload__top {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 3rem;
 }
 .upload__top p {
-  margin-top: 2rem;
   font-size: 1.7rem;
   font-weight: 600;
+  margin-top: 2rem;
   @media (max-width: 450px) {
     font-size: 1.3rem;
   }
@@ -157,11 +157,11 @@
 }
 .upload__input {
   background-color: none;
-  border: 1px solid #ced4da;
-  padding: 0.5rem 1rem;
   border-radius: 0.5rem;
+  border: 1px solid #ced4da;
   font-size: 1rem;
   font-weight: 400;
+  padding: 0.5rem 1rem;
   text-decoration: none;
   width: 95%;
   @media (max-width: 900px) {
@@ -183,12 +183,12 @@ input:focus {
 }
 .upload__button {
   background-color: #0f172a;
-  border: none;
-  padding: 1rem 2rem;
-  color: white;
-  font-weight: 500;
   border-radius: 0.4rem;
+  border: none;
+  color: white;
   cursor: pointer;
+  font-weight: 500;
+  padding: 1rem 2rem;
   transition: all 0.2s ease-in-out;
 }
 .upload__close,
@@ -196,12 +196,12 @@ input:focus {
   cursor: pointer;
 }
 .item__avatar {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
   background-color: #000000;
-  color: white;
   border-radius: 100%;
+  color: white;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  width: 30px;
 }
