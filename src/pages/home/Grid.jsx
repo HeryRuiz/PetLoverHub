@@ -45,17 +45,20 @@ function Grid() {
         </div>
       ) : (
         <div className="grid__container">
-          {imageUrls.map((url, index) => (
-            <div className="grid__box" key={index}>
-              <button
-                className="grid__button"
-                onClick={() => handleSaveImage(url)}
-              >
-                Save
-              </button>
-              <img src={url} alt={`Image ${index}`} />
-            </div>
-          ))}
+          {imageUrls
+            .slice()
+            .reverse()
+            .map((url, index) => (
+              <div className="grid__box" key={index}>
+                <button
+                  className="grid__button"
+                  onClick={() => handleSaveImage(url)}
+                >
+                  Save
+                </button>
+                <img src={url} alt={`Image ${index}`} />
+              </div>
+            ))}
         </div>
       )}
     </section>
