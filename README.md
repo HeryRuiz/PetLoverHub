@@ -34,7 +34,8 @@
   <img src='./readme/sign.png'/>
 </div>
 <br><br>
-<h3 align='center'>Reset Page 🦾</h3>
+<h3 align='center'>Reset Page 
+🦿</h3>
 <div align='center'>
   <img src='./readme/reset.png'/>
 </div>
